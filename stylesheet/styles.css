@@ -9,8 +9,8 @@ body {
 header {
   background-color: #faf8f8;
   background-image: url('Imagies\Home page.jpg');
-  background-size: cover;background-size: cover;
-  padding: 1;
+  background-size: cover;
+  padding: 0;
   color: #aa1515;
   text-align: center;
 }
@@ -27,11 +27,11 @@ header {
   padding: 0;
   display: flex;
   justify-content: center;
-  flex-grow:1 ;
+  flex-grow: 1;
 }
 
 .nav-menu li {
-  margin:  50px;
+  margin: 50px;
 }
 
 .nav-menu li a {
@@ -54,11 +54,11 @@ h1 {
 }
 
 .hero {
-  height: 100vh;
+  height: 70vh;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  color: #0f0101;
+  color: #0a0606;
   text-align: center;
 }
 
@@ -67,13 +67,13 @@ h1 {
 }
 
 .hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: 70px;
+  margin-bottom: 10px;
 }
 
 .hero p {
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 130px;
 }
 
 .cta-button {
@@ -121,4 +121,27 @@ h1 {
 .social-media img {
   width: 30px;
   margin: 0 5px;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  /* Adjust styles for screens with a maximum width of 768px */
+  .nav-menu li {
+    margin: 10px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
 }
