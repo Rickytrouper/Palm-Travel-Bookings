@@ -122,3 +122,35 @@ h1 {
   width: 30px;
   margin: 0 5px;
 }
+.booking_form{
+  background-color: rgba(255,255,255,0.7);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 80%;
+  margin: 0 auto;
+}
+.booking_form h2{
+text-align:center ;
+}
+.booking_form{
+  display: flex;
+  flex-direction: column;
+}
+.booking_form input{
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+.booking_form button{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+}
+.booking_form button:hover{
+  background-color: #45a049;
+}
