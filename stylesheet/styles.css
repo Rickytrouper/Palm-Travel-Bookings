@@ -39,14 +39,14 @@ header {
   text-decoration: none;
 }
 
-.social-media {
+/* .social-media {
   display: flex;
   justify-content: flex-end;
 }
 
 .social-media a {
   margin-left: 10px;
-}
+} */
 
 h1 {
   font-size: 32px;
