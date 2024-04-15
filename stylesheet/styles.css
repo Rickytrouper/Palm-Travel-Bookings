@@ -122,7 +122,6 @@ h1 {
   width: 30px;
   margin: 0 5px;
 }
-<<<<<<< HEAD
 
 /* Media Query */
 @media (max-width: 768px) {
@@ -145,7 +144,6 @@ h1 {
     font-size: 16px;
     padding: 10px 20px;
   }
-=======
 .booking_form{
   background-color: rgba(255,255,255,0.7);
   padding: 20px;
@@ -177,5 +175,4 @@ border-radius: 5px;
 }
 .booking_form button:hover{
   background-color: #45a049;
->>>>>>> 5a322049c853043fbc9fccadb3a87a367524cd96
 }
