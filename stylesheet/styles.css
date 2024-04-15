@@ -8,7 +8,7 @@ body {
 /* Header Styles */
 header {
   background-color: #faf8f8;
-  background-image: url('Imagies\Home page.jpg');
+  background-image: url('Imagies/Home page.jpg');
   background-size: cover;
   padding: 0;
   color: #aa1515;
@@ -39,16 +39,7 @@ header {
   text-decoration: none;
 }
 
-/* .social-media {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.social-media a {
-  margin-left: 10px;
-} */
-
-h1 {
+h1 h2 h3{
   font-size: 32px;
   margin: 0;
 }
@@ -144,35 +135,92 @@ h1 {
     font-size: 16px;
     padding: 10px 20px;
   }
-.booking_form{
-  background-color: rgba(255,255,255,0.7);
+
+  header {
+    background-size: contain;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+
+  .hero-content {
+    padding: 0 20px;
+  }
+
+  .hero p {
+    margin-bottom: 40px;
+  }
+
+  .footer-content {
+    padding: 20px;
+  }
+
+  .footer-content ul li {
+    margin-bottom: 5px;
+  }
+
+  .social-media img {
+    width: 20px;
+  }
+}
+
+.booking_form {
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   border-radius: 10px;
   max-width: 500px;
   width: 80%;
   margin: 0 auto;
 }
-.booking_form h2{
-text-align:center ;
+
+.booking_form h2 {
+  text-align: center;
 }
-.booking_form{
+
+.booking_form {
   display: flex;
   flex-direction: column;
 }
-.booking_form input{
-padding: 8px;
-border: 1px solid #ccc;
-border-radius: 5px;
+
+.booking_form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-.booking_form button{
+
+.booking_form button {
   margin-top: 10px;
   padding: 10px;
   background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
-  cursor: pointer; 
+  cursor: pointer;
 }
-.booking_form button:hover{
+
+.booking_form button:hover {
   background-color: #45a049;
 }
+
+/* .form-inline {
+  display: flex;
+  align-items: ;
+}
+
+.form-inline label {
+  margin-right: 10px;
+}
+
+.search-button {
+  margin-left: 10px;
+} */
