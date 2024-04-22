@@ -22,7 +22,7 @@
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about_us.html">Our Story</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+          <li class="nav-item"><a class="nav-link" href="bookings_form.html">Bookings</a></li>
           <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
           <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
         </ul>
@@ -33,25 +33,51 @@
         </div>
       </div>
     </nav>
-<body>
-    <h2> Travel Booking Form</h2>
+<body> 
+  <br>
+  <img align="right" src="Imagies/tourist-pointing-up.png" alt="Here I Come!">
+
+    <!--<img src="Imagies/tourist-pointing-up.png" alt="Here I Come!""style="margin-top: 50px;">-->
+
+  
+
+
+
+    <h2><strong> Travel Booking Form</strong></h2>
+    <br></br>
     <form>
-        <label> Name: *</label>
+        <label for="fullname"> Name: *</label>  
         <input type="text" id="fullname" name="fullname"/>
-        <label> Email Address: *</label>
+        <br></br>
+
+         <label for="email"> Email Address: *</label>
         <input type="email" id="email" name="email"/>
-        <label> Destination: *</label>
-        <input type="text" id="destinatin" name="destination"/>
-        <label> Departure Date: *</label>
-        <input type="date  " id="departuredate" name="departuredate"/>
-        <label> Return Date: *</label>
-        <input type="date  " id="returndate" name="returndate"/>
-        <br><br>
-        <label> Departure Date: *</label>
-        <input type="date  " id="departuredate" name="departuredate"/> 
+        <br></br>
+
+        <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone">
+        <br></br>
+
+        <label for="destination"> Destination: *</label> 
+        <input type="text" id="destination" name="destination"/>
+        <br></br>
+        <h7>Departure Date:
+          <input type="datetime-local"
+                 id="Test_DatetimeLocal">
+      </h7>
+        <br> <br>
+        
+        <h7>Return Date:
+          <input type="datetime-local"
+                 id="Test_DatetimeLocal">
+      </h7>
+        <br></br>
+
         <button type="submit">Book Now</button>
+        <br> </br>
         
     </form>
+    <br> </br><br> </br><br> </br><br> </br><br> </br>
     <footer>
       <div class="footer-content">
         <div class="row align-items-center">
@@ -71,7 +97,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about_us.html">Our Story</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="bookings_form.html">Bookings</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
               </ul>

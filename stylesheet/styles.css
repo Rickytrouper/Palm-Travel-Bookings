@@ -177,9 +177,10 @@ h1 h2 h3{
   .social-media img {
     width: 20px;
   }
-}
 
-.booking_form {
+
+
+.bookings_form {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   border-radius: 10px;
@@ -188,22 +189,22 @@ h1 h2 h3{
   margin: 0 auto;
 }
 
-.booking_form h2 {
+.bookings_form h2 {
   text-align: center;
 }
 
-.booking_form {
+.bookings_form {
   display: flex;
   flex-direction: column;
 }
 
-.booking_form input {
+.bookings_form input {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.booking_form button {
+.bookings_form button {
   margin-top: 10px;
   padding: 10px;
   background-color: #4caf50;
@@ -213,7 +214,7 @@ h1 h2 h3{
   cursor: pointer;
 }
 
-.booking_form button:hover {
+.bookings_form button:hover {
   background-color: #45a049;
 }
 .carousel-inner .destination-card {
