@@ -56,9 +56,35 @@
         </div>
       </div>
     </nav>
- 
-  
-      <h2><strong> Services and Traveler Information </strong></h2>
+    <h2><strong> Our Services</strong></h2>
+    <section class="destination-images">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+                       <div id="destination-carousel" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel" data-bs-interval="3500">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="destination-card">
+                    <img src="Images/Destination 1.jpg" alt="First Destination" class="img-fluid">
+                   
+                  </div>
+                </div>
+                </div>
+              <a class="carousel-control-prev" href="#destination-carousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#destination-carousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <h3> Please fill in your information below and receive a quote via email:</h3>
       <label for="name">Full Name:</label>
       <input type="text" id="name" name="name" required>
       <label for="email">Email Address:</label>
@@ -71,31 +97,39 @@
   
       <label for="travel_dates">Travel Dates:</label>
       <input type="text" id="travel_dates" name="travel_dates" placeholder="Departure Date - Return Date (e.g. 2024-05-15 - 2024-05-22)">
-  
-      <h3>Choose Your Package</h3>
+
       <fieldset>
-        <legend>Package Selection</legend>
+        <legend>Our Available Packages</legend>
         <div class="package">
           <input type="radio" id="package_basic" name="package" value="basic">
-          <label for="package_basic">Basic Package (Flights & Accommodations)</label>
+          <label for="package_basic">Basic Package (Economy Flights, Tours & Accommodations) <br>
+            Cost: $150,450.00 JMD per person (for 4 days & 3 nights) <br>
+            Cost: $240,900.00 JMD per person (for 6 days & 5 nights)
+          </label>
           <br>
           <textarea rows="3" cols="50" disabled>Includes round-trip flights, all-inclusive hotel accommodations, a tour of the city's top three attractions 
           and basic travel assistance.</textarea>
         </div>
         <div class="package">
           <input type="radio" id="package_explorer" name="package" value="explorer">
-          <label for="package_explorer">Explorer Package (Flights, Accommodations, & Activities)</label>
+          <label for="package_explorer">Explorer Package (Economy Flights, Accommodations, & Activities) <br>
+            Cost: $280,780.00 JMD per person (for 4 days & 3 nights) <br>
+            Cost: $350,400.00 JMD per person (for 6 days & 5 nights)
+          </label>
           <br>
           <textarea rows="3" cols="50" disabled>Includes everything in the Basic Package, plus curated activity
             suggestions and booking assistance.</textarea>
         </div>
         <div class="package">
           <input type="radio" id="package_luxury" name="package" value="luxury" >
-          <label for="package_luxury">Luxury Package (Premium Flights, Upscale Accommodations, & VIP Services)</label>
+          <label for="package_luxury">Luxury Package (Premium Flights (first and/or business class), Upscale Accommodations, & VIP Services) <br>
+            Cost: $490,800.00 JMD per person (for 4 days & 3 nights) <br>
+            Cost: $620,500.00 JMD per person (for 6 days & 5 nights)
+          </label>
           <br>
-          <textarea rows="4" cols="50" disabled>Includes everything in the Explorer Package, 
-            plus premium flight upgrades, upscale hotel accommodations, airport transfers, and 
-            exclusive travel perks. Also comes with luxury vehicle and driver</textarea>
+          <textarea rows="5" cols="50" disabled>Includes everything in the Explorer Package, 
+            plus premium flight upgrades, five star hotel accommodations, airport transfers, and 
+            exclusive travel perks. Also comes with a luxury vehicle and chauffeur.</textarea>
         </div>
       </fieldset>
   
