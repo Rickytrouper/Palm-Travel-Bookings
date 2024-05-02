@@ -17,7 +17,7 @@ header {
 
 .container {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto; /* Center justify the main container */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,11 +41,7 @@ header {
   text-decoration: none;
 }
 
-h1, h2, h3 {
-  font-size: 32px;
-  margin: 0;
-}
-
+/* Hero Styles */
 .hero {
   height: 70vh;
   display: flex;
@@ -92,6 +88,7 @@ h1, h2, h3 {
   margin-top: 80px;
 }
 
+/* Footer Styles */
 .footer-content {
   padding: 40px;
   background-color: #333;
@@ -142,6 +139,7 @@ h1, h2, h3 {
     /* Add styles specific to the element for smaller screens */
   }
 }
+
 /* Adjust styles for screens with a maximum width of 480px (Mobile phones) */
 @media only screen and (max-width: 480px) {
   .nav-menu li {
@@ -215,4 +213,11 @@ h1, h2, h3 {
 
   .footer-content {
     padding: 10px;
-  }
+   }
+}
+
+/* Set content width to 80% of the page */
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
