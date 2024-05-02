@@ -132,54 +132,6 @@ h1, h2, h3 {
   .nav-menu li {
     margin: 10px;
   }
-
-  .hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-
-  .hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-
-  header {
-    background-size: contain;
-  }
-
-  .container {
-    flex-direction: column;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-menu li {
-    margin: 10px 0;
-  }
-
-  .hero-content {
-    padding: 0 20px;
-  }
-
-  .hero p {
-    margin-bottom: 40px;
-  }
-
-  .footer-content {
-    padding: 20px;
-  }
-
-  .footer-content ul li {
-    margin-bottom: 5px;
-  }
-
-  .social-media img {
-    width: 20px;
-  }
-  
   /* Additional styles for specific elements */
   .carousel {
     /* Add styles specific to the carousel for smaller screens */
@@ -190,185 +142,11 @@ h1, h2, h3 {
     /* Add styles specific to the element for smaller screens */
   }
 }
-
 /* Adjust styles for screens with a maximum width of 480px (Mobile phones) */
 @media only screen and (max-width: 480px) {
   .nav-menu li {
     margin: 5px;
   }
-
-  .hero h1 {
-    font-size: 26px;
-    margin-bottom: 5px;
-  }
-
-  .hero p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-
-  .container {
-    width: 90%;
-  }
-
-  .cta-description {
-    margin-top: 40px;
-  }
-
-  .footerApologies for the confusion. To optimize all elements, including the carousel, for mobile phones, tablets, and laptop screens, you can use the following CSS code with media queries:
-
-```css
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Header Styles */
-header {
-  background-color: #faf8f8;
-  background-image: url('Imagies/Home page.jpg');
-  background-size: cover;
-  padding: 0;
-  color: #aa1515;
-  text-align: center;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-}
-
-.nav-menu li {
-  margin: 50px;
-}
-
-.nav-menu li a {
-  color: #0c0c0c;
-  text-decoration: none;
-}
-
-h1, h2, h3 {
-  font-size: 32px;
-  margin: 0;
-}
-
-.hero {
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #0a0606;
-  text-align: center;
-}
-
-.hero-content {
-  max-width: 800px;
-}
-
-.hero h1 {
-  font-size: 50px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.cta-button {
-  display: block;
-  margin: 10px auto;
-  padding: 15px 30px;
-  background-color: #ff9800;
-  color: #f8f8f5;
-  font-size: 18px;
-  text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
-  max-width: 200px;
-}
-
-.cta-button:hover {
-  background-color: #f57c00;
-}
-
-.cta-description {
-  color: #0c0805;
-  font-size: 18px;
-  margin-top: 80px;
-}
-
-.footer-content {
-  padding: 40px;
-  background-color: #333;
-  color: #fff;
-}
-
-.footer-content h4 {
-  margin-bottom: 20px;
-}
-
-.footer-content p {
-  margin-bottom: 20px;
-}
-
-.footer-content ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer-content ul li {
-  margin-bottom: 10px;
-}
-
-.footer-content ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.social-media img {
-  width: 30px;
-  margin: 0 5px;
-}
-
-/* Media Queries */
-
-/* Adjust styles for screens with a maximum width of 768px (Tablets and larger mobile phones) */
-@media only screen and (max-width: 768px) {
-  .nav-menu li {
-    margin: 10px;
-  }
- /* Additional styles for specific elements */
- .carousel {
-  /* Add styles specific to the carousel for smaller screens */
-}
-
-/* Additional styles for other elements on smaller screens */
-.element-class {
-  /* Add styles specific to the element for smaller screens */
-}
-}
-
-/* Adjust styles for screens with a maximum width of 480px (Mobile phones) */
-@media only screen and (max-width: 480px) {
-.nav-menu li {
-  margin: 5px;
-}
-
   .hero h1 {
     font-size: 36px;
     margin-bottom: 10px;
@@ -416,7 +194,6 @@ h1, h2, h3 {
     width: 20px;
   }
   
- 
   .hero h1 {
     font-size: 26px;
     margin-bottom: 5px;
@@ -428,11 +205,14 @@ h1, h2, h3 {
   }
 
   .container {
-    width: 90%;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .cta-description {
     margin-top: 40px;
   }
 
-  .footer
+  .footer-content {
+    padding: 10px;
+  }
