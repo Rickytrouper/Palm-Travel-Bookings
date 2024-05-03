@@ -226,5 +226,171 @@ h1 h2 h3{
 .content {
   width: 80%;
   margin: 0 auto;
+<<<<<<< HEAD
+}
+
+.bookings_form h2 {
+  text-align: left;
+}
+
+.bookings_form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bookings_form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.bookings_form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bookings_form button:hover {
+  background-color: #45a049;
+}
+
+#destination-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.destination-card {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.destination-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  width: 80%;
+  margin: 070 auto;
+}
+
+.destination-info {
+  text-align: center;
+} 
+
+
+.search-widgets {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-form select,
+.search-form input[type="text"] {
+  height: 30px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.search-form button {
+  height: 30px;
+  padding: 5px 10px;
+}
+.customer-support {
+  padding: 40px 0;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.customer-support {
+  padding: 40px 0;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.customer-support .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.customer-support h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.customer-support p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.customer-support .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customer-support .contact-form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.customer-support .contact-form input,
+.customer-support .contact-form textarea {
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.customer-support .contact-form textarea {
+  height: 150px;
+}
+
+.customer-support .contact-form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.customer-support .contact-form button:hover {
+  background-color: #45a049;
+=======
+  text-align: center;
+>>>>>>> 8e95f977bbcf56b1377f3160949922f5ab3e14ab
 }
