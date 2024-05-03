@@ -212,10 +212,15 @@ h1 h2 h3{
   .footer-content {
     padding: 10px;
    }
-
-   
 }
-
+@media (min-width: 576px) {
+  .search-form select,
+  .search-form input,
+  .search-form button {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
 /* Setcontent width to 80% of the page */
 .content {
   width: 80%;
@@ -308,21 +313,21 @@ h1 h2 h3{
 
 .search-form {
   display: flex;
-  align-items: center;
-  margin-right: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .search-form select,
-.search-form input[type="text"] {
-  height: 30px;
-  padding: 5px;
-  margin-right: 5px;
+.search-form input,
+.search-form button {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-.search-form button {
+/* .search-form button {
   height: 30px;
   padding: 5px 10px;
-}
+} */
 .customer-support {
   padding: 40px 0;
   background-color: #f1f1f1;
