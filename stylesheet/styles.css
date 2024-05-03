@@ -41,11 +41,11 @@ header {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1 h2 h3{
   font-size: 32px;
   margin: 0;
   text-align: center;
-}
+  }
 
 .hero {
   height: 70vh;
@@ -187,7 +187,7 @@ h1, h2, h3 {
   .social-media img {
     width: 20px;
   }
-
+  
   .hero h1 {
     font-size: 26px;
     margin-bottom: 5px;
@@ -209,10 +209,10 @@ h1, h2, h3 {
 
   .footer-content {
     padding: 10px;
-  }
+   }
 }
 
-/* Set content width to 80% of the page */
+/* Setcontent width to 80% of the page */
 .content {
   width: 80%;
   margin: 0 auto;
@@ -380,6 +380,4 @@ h1, h2, h3 {
 
 .customer-support .contact-form button:hover {
   background-color: #45a049;
-=======
-  text-align: center;
->>>>>>> 8e95f977bbcf56b1377f3160949922f5ab3e14ab
+  text-align: center;}
