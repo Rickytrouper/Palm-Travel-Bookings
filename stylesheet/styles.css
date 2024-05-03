@@ -1,3 +1,9 @@
+/* Setcontent width to 80% of the page */
+.content {
+  width: 80%;
+  margin: 0 auto;
+
+}
 /* Global Styles */
 body {
   font-family: Arial, sans-serif;
@@ -210,6 +216,10 @@ h1 h2 h3{
   .footer-content {
     padding: 10px;
    }
+
+
+
+
 }
 
 /* Setcontent width to 80% of the page */
