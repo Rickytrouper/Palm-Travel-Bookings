@@ -5,7 +5,6 @@ body {
   padding: 0;
 }
 
-
 /* Header Styles */
 header {
   background-color: #faf8f8;
@@ -17,6 +16,8 @@ header {
 }
 
 .container {
+  width: 80%;
+  margin: 0 auto; /* Center justify the main container */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,9 +44,8 @@ header {
 h1 h2 h3{
   font-size: 32px;
   margin: 0;
-}
-
- 
+  text-align: center;
+  }
 
 .hero {
   height: 70vh;
@@ -86,12 +86,14 @@ h1 h2 h3{
 .cta-button:hover {
   background-color: #f57c00;
 }
+
 .cta-description {
   color: #0c0805;
   font-size: 18px;
   margin-top: 80px;
 }
 
+/* Footer Styles */
 .footer-content {
   padding: 40px;
   background-color: #333;
@@ -125,13 +127,30 @@ h1 h2 h3{
   margin: 0 5px;
 }
 
-/* Media Query */
-@media (max-width: 768px) {
-  /* Adjust styles for screens with a maximum width of 768px */
+/* Media Queries */
+
+/* Adjust styles for screens with a maximum width of 768px (Tablets and larger mobile phones) */
+@media only screen and (max-width: 768px) {
   .nav-menu li {
     margin: 10px;
   }
+  /* Additional styles for specific elements */
+   .carousel { 
 
+    /* Add styles specific to the carousel for smaller screens */
+   } 
+  
+  /* Additional styles for other elements on smaller screens */
+   .element-class { 
+    /* Add styles specific to the element for smaller screens */
+  } 
+}
+
+/* Adjust styles for screens with a maximum width of 480px (Mobile phones) */
+@media only screen and (max-width: 480px) {
+  .nav-menu li {
+    margin: 5px;
+  }
   .hero h1 {
     font-size: 36px;
     margin-bottom: 10px;
@@ -141,8 +160,6 @@ h1 h2 h3{
     font-size: 18px;
     margin-bottom: 20px;
   }
-
- 
 
   header {
     background-size: contain;
@@ -180,17 +197,36 @@ h1 h2 h3{
   .social-media img {
     width: 20px;
   }
-  .carousel-container {
-    height: auto;
+  
+  .hero h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .cta-description {
+    margin-top: 40px;
+  }
+
+  .footer-content {
+    padding: 10px;
+   }
 }
 
-.bookings_form {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 500px;
+/* Setcontent width to 80% of the page */
+.content {
   width: 80%;
   margin: 0 auto;
+<<<<<<< HEAD
 }
 
 .bookings_form h2 {
@@ -354,4 +390,7 @@ h1 h2 h3{
 
 .customer-support .contact-form button:hover {
   background-color: #45a049;
+=======
+  text-align: center;
+>>>>>>> 8e95f977bbcf56b1377f3160949922f5ab3e14ab
 }
