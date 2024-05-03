@@ -10,13 +10,11 @@
 </head> 
    <body>
     <style>
-      /* Optional styling for the form */
-      form {
-        width: 500px;
-        margin: 0 auto;
-        padding: 20px;
-        text-align: center;
-      }
+     .container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
       label {
         display: block;
         margin-bottom: 5px;
@@ -57,7 +55,26 @@
         <p class="tagline">Unforgettable Journeys, Tailored for You</p>
       </div><hr>
 
-       <h2><strong> Our Packages and Services</strong></h2>
+      <h2><strong>Our Services</strong></h2>
+<div class="container">
+  <ul class="myUL">
+    <li><strong>Flights</strong>
+      <p>Assistance with booking international flights.</p>
+    </li>
+    <li><strong>Hotel Accommodations</strong>
+      <p>Get the best rates at local and international hotels.</p>
+    </li>
+    <li><strong>Car Rentals</strong>
+      <p>Assistance with booking international car rentals.</p>
+    </li>
+    <li><strong>Cruises</strong>
+      <p>Assistance with booking cruises around the Caribbean.</p>
+    </li>
+    <li><a href="bookings_form.html">Book Now</a></li>
+  </ul>
+</div>
+    
+       
     <section class="featured-destinations">
         <div class="container">
           <div class="row">
@@ -111,22 +128,9 @@
         </div>
       </section>
       
-    <h3> Please fill in your information below and receive a quote via email:</h3>
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required>
-      
-  
-      <h3>Trip Details</h3>
-      <label for="destination">Destination:</label>
-      <input type="text" id="destination" name="destination" required>
-  
-      <label for="travel_dates">Travel Dates:</label>
-      <input type="text" id="travel_dates" name="travel_dates" placeholder="Departure Date - Return Date (e.g. 2024-05-15 - 2024-05-22)">
-
-      <fieldset>
-        <legend>Our Available Packages</legend>
+     <fieldset>
+        <legend><strong>Our Available Packages</strong></legend>
+        <h5> Here at Palm Travel Bookings we offer tailored packages for customer's interested in more than one of our services.</h5>
         <div class="package">
           <input type="radio" id="package_basic" name="package" value="basic">
           <label for="package_basic">Basic Package (Economy Flights, Tours & Accommodations) <br>
@@ -167,6 +171,7 @@
        <form action="bookings_form.html">        
         <input type ="submit" = value="Submit"/>
     </form>
+    <br>
   </body>  
     
 
