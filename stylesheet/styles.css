@@ -135,14 +135,15 @@ h1 h2 h3{
     margin: 10px;
   }
   /* Additional styles for specific elements */
-  /* .carousel { */
+   .carousel { margin: 10px;
+
     /* Add styles specific to the carousel for smaller screens */
-  /* } */
+   } 
   
   /* Additional styles for other elements on smaller screens */
-  /* .element-class { */
+   .element-class { margin: 10px;
     /* Add styles specific to the element for smaller screens */
-  /* } */
+  } 
 }
 
 /* Adjust styles for screens with a maximum width of 480px (Mobile phones) */
