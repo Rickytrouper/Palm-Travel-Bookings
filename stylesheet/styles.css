@@ -223,6 +223,7 @@ h1 h2 h3{
 
 /* Setcontent width to 80% of the page */
 .content {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
+  text-align: center;
 }
