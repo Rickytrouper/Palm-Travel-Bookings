@@ -296,7 +296,7 @@ h1 h2 h3{
     transition-duration: 4s;
   }
   .search-widgets {
-    display: flex;
+    display: center;
     align-items: center;
     justify-content: flex-end;
     margin-bottom: 50px;
