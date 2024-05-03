@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -35,49 +35,39 @@
     </nav>
 <body> 
   <br>
-  <img align="right" src="Imagies/tourist-pointing-up.png" alt="Here I Come!">
+  <img src="Imagies/tourist-pointing-up.png" alt="Here I Come!">
 
     <!--<img src="Imagies/tourist-pointing-up.png" alt="Here I Come!""style="margin-top: 50px;">-->
 
   
-
-
-
     <h2><strong> Travel Booking Form</strong></h2>
     <br></br>
-    <form>
-        <label for="fullname"> Name: *</label>  
-        <input type="text" id="fullname" name="fullname"/>
-        <br></br>
-
-         <label for="email"> Email Address: *</label>
-        <input type="email" id="email" name="email"/>
-        <br></br>
-
-        <label for="phone">Phone Number:</label>
+    <form class="bookings_form">
+      <h2>Booking Form</h2>
+    
+      <label for="fullname">Name: *</label>
+      <input type="text" id="fullname" name="fullname">
+    
+      <label for="email">Email Address: *</label>
+      <input type="email" id="email" name="email">
+    
+      <label for="phone">Phone Number:</label>
       <input type="tel" id="phone" name="phone">
-        <br></br>
-
-        <label for="destination"> Destination: *</label> 
-        <input type="text" id="destination" name="destination"/>
-        <br></br>
-        <h7>Departure Date:
-          <input type="datetime-local"
-                 id="Test_DatetimeLocal">
-      </h7>
-        <br> <br>
-        
-        <h7>Return Date:
-          <input type="datetime-local"
-                 id="Test_DatetimeLocal">
-      </h7>
-        <br></br>
-
-        <button type="submit">Book Now</button>
-        <br> </br>
-        
+    
+      <label for="destination">Destination: *</label>
+      <input type="text" id="destination" name="destination">
+      <br><br>
+    
+      <label for="departure">Departure Date:</label>
+      <input type="datetime-local" id="departure" name="departure">
+    
+      <label for="return">Return Date:</label>
+      <input type="datetime-local" id="return" name="return">
+    <br><br>
+      <button type="submit">Book Now</button>
     </form>
-    <br> </br><br> </br><br> </br><br> </br><br> </br>
+    <br> </br>
+    
     <footer>
       <div class="footer-content">
         <div class="row align-items-center">
@@ -85,7 +75,7 @@
             <div class="column">
               <h4>Address</h4>
               <p>123 Barbados Ave <br>New Kingston<br>Kingston <br>Jamaica <br><br> Tele (876) 879-0878,<br>Email us @ palmtravelbookings.ja.</p>
-              <li><a href="customer_support.html">Customer Support</a></li>
+              
             </div>
             <br>
             
@@ -128,6 +118,6 @@
   
     <!-- Add necessary JavaScript files and scripts here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   </body>
   </html>
