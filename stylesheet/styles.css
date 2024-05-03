@@ -41,11 +41,11 @@ header {
   text-decoration: none;
 }
 
-h1 h2 h3{
+h1, h2, h3 {
   font-size: 32px;
   margin: 0;
   text-align: center;
-  }
+}
 
 .hero {
   height: 70vh;
@@ -134,16 +134,6 @@ h1 h2 h3{
   .nav-menu li {
     margin: 10px;
   }
-  /* Additional styles for specific elements */
-   .carousel { 
-
-    /* Add styles specific to the carousel for smaller screens */
-   } 
-  
-  /* Additional styles for other elements on smaller screens */
-   .element-class { 
-    /* Add styles specific to the element for smaller screens */
-  } 
 }
 
 /* Adjust styles for screens with a maximum width of 480px (Mobile phones) */
@@ -197,7 +187,7 @@ h1 h2 h3{
   .social-media img {
     width: 20px;
   }
-  
+
   .hero h1 {
     font-size: 26px;
     margin-bottom: 5px;
@@ -219,10 +209,10 @@ h1 h2 h3{
 
   .footer-content {
     padding: 10px;
-   }
+  }
 }
 
-/* Setcontent width to 80% of the page */
+/* Set content width to 80% of the page */
 .content {
   width: 80%;
   margin: 0 auto;
