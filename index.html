@@ -61,8 +61,8 @@
     </form>
   </div>
   <hr>
-    <section class="featured-destinations">
-      <h2 class="text-center" style="color:#aa1515;">Top Caribbean Destination</h2>
+  <section class="featured-destinations">
+    <h2 class="text-center" style="color:#aa1515;">Top Caribbean Destination</h2>
     <div class="container">
       <div class="row">
         <div class="col-md-10 offset-md-1">
@@ -80,42 +80,7 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="destination-card">
-                  <div class="carousel-image">
-                    <img src="Images/Bahamas.jpg" alt="Bahamas">
-                  </div>
-                  <div class="destination-info">
-                    <h3 style="color:#aa1515">Bahamas</h3>
-                    <p class="text-center">The Bahamas offers a luxurious paradise with pristine white sandy beaches, crystal-clear turquoise waters, and exclusive resorts that cater to the most discerning travelers. From world-class accommodations to gourmet dining and indulgent spa experiences, the Bahamas embodies luxury and refinement at every turn.</p>
-                    <a href="videos/Top 10 All-Inclusive Resorts in the Bahamas (480 X 854).mp4" class="cta-button">Learn More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="destination-card">
-                  <div class="carousel-image">
-                    <img src="Images/Bermuda.jpg" alt="Bermuda">
-                  </div>
-                  <div class="destination-info">
-                    <h3 style="color:#aa1515">Bermuda</h3>
-                    <p>Staying in Bermuda offers a truly exotic experience, with its pink sandy beaches, crystal-clear turquoise waters, and a vibrant cultural blend of British, African, and Caribbean influences. Immerse yourself in the island's natural beauty, explore the mysterious underwater caves, and indulge in the local cuisine for an unforgettable and exotic getaway.</p>
-                    <a href="videos/TOP 5 Best Luxury Hotels And Resorts In BERMUDA Hotels On The Beach Bermuda (480 X 854).mp4" class="cta-button">Learn More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="destination-card">
-                  <div class="carousel-image">
-                    <img src="Images/tobago.jpg" alt="Tobago">
-                  </div>
-                  <div class="destination-info">
-                    <h3 style="color:#aa1515">Twin Island Of Trinidad & Tobago</h3>
-                    <p class="text-center">Trinidad and Tobago epitomize Caribbean luxury with their pristine beaches, lush tropical landscapes, and world-class resorts that cater to the most discerning travelers. From indulgent spa retreats to thrilling outdoor adventures, this dual-island nation offers a truly opulent getaway for those seeking an exquisite blend of relaxation and adventure.</p>
-                    <a href="videos/10 Best Hotels in Trinidad and Tobago (480 X 854).mp4" class="cta-button">Learn More</a>
-                  </div>
-                </div>
-              </div>
+              <!-- other carousel items -->
             </div>
             <a class="carousel-control-prev" href="#destination-carousel" role="button" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -130,6 +95,12 @@
       </div>
     </div>
   </section>
+  
+  <div id="video-container">
+    <video id="video-player" controls>
+      <source src="" type="video/mp4">
+    </video>
+  </div>
   <br><br>
   
   <footer>
@@ -182,6 +153,31 @@
   
   <!-- Add necessary JavaScript files and scripts here -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> 
+  <script>
+    // Get references to the necessary elements
+var playVideoButtons = document.getElementsByClassName('cta-button');
+var videoContainer = document.getElementById('video-container');
+var videoPlayer = document.getElementById('video-player');
+
+// Add event listeners to the "Learn More" buttons
+for (var i = 0; i < playVideoButtons.length; i++) {
+  playVideoButtons[i].addEventListener('click', function(event) {
+    event.preventDefault();
+    var videoUrl = this.getAttribute('href');
+    videoPlayer.src = videoUrl;
+    videoContainer.style.display = 'block';
+    videoPlayer.play();
+  });
+}
+
+// Add event listener to the video player for the 'ended' event
+videoPlayer.addEventListener('ended', function() {
+  videoContainer.style.display = 'none';
+  // Perform an action to return to the page
+  // For example, you can redirect to the current page
+  window.location.href = window.location.href;
+});
+  </script> 
 </body>
 </html>
