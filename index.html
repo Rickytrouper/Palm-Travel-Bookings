@@ -76,7 +76,7 @@
                   <div class="destination-info">
                     <h3 style="color:#aa1515">Beautiful Jamaica</h3>
                     <p>Jamaica beckons with its exotic allure, where lush tropical rainforests, cascading waterfalls, and vibrant reggae rhythms create an atmosphere of enchantment. Experience the warmth of the Jamaican people, savor the flavors of jerk cuisine, and unwind on the stunning beaches, making your stay in Jamaica a truly exotic and captivating adventure.</p>
-                    <a href="videos/10 Best Places to Visit in JAMAICA (480 X 854).mp4" class="cta-button" onclick="showVideo(event)">Learn More</a>
+                    <a href="videos/10 Best Places to Visit in JAMAICA (480 X 854).mp4" class="cta-button" onclick="showVideo(event)" data-return-url="index.html"onclick="showVideo(event)">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -88,7 +88,7 @@
                   <div class="destination-info">
                     <h3 style="color:#aa1515">Bahamas</h3>
                     <p class="text-center">The Bahamas offers a luxurious paradise with pristine white sandy beaches, crystal-clear turquoise waters, and exclusive resorts that cater to the most discerning travelers. From world-class accommodations to gourmet dining and indulgent spa experiences, the Bahamas embodies luxury and refinement at every turn.</p>
-                    <a href="videos/Top 10 All-Inclusive Resorts in the Bahamas (480 X 854).mp4" class="cta-button" onclick="showVideo(event)">Learn More</a>
+                    <a href="videos/Top 10 All-Inclusive Resorts in the Bahamas (480 X 854).mp4" class="cta-button" onclick="showVideo(event)" data-return-url="index.html">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -100,7 +100,7 @@
                   <div class="destination-info">
                     <h3 style="color:#aa1515">Bermuda</h3>
                     <p>Staying in Bermuda offers a truly exotic experience, with its pink sandy beaches, crystal-clear turquoise waters, and a vibrant cultural blend of British, African, and Caribbean influences. Immerse yourself in the island's natural beauty, explore the mysterious underwater caves, and indulge in the local cuisine for an unforgettable and exotic getaway.</p>
-                    <a href="videos/TOP 5 Best Luxury Hotels And Resorts In BERMUDA Hotels On The Beach Bermuda (480 X 854).mp4" class="cta-button" onclick="showVideo(event)">Learn More</a>
+                    <a href="videos/TOP 5 Best Luxury Hotels And Resorts In BERMUDA Hotels On The Beach Bermuda (480 X 854).mp4" class="cta-button" onclick="showVideo(event)" data-return-url="index.html">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -112,7 +112,7 @@
                   <div class="destination-info">
                     <h3 style="color:#aa1515">Twin Island Of Trinidad & Tobago</h3>
                     <p class="text-center">Trinidad and Tobago epitomize Caribbean luxury with their pristine beaches, lush tropical landscapes, and world-class resorts that cater to the most discerning travelers. From indulgent spa retreats to thrilling outdoor adventures, this dual-island nation offers a truly opulent getaway for those seeking an exquisite blend of relaxation and adventure.</p>
-                    <a href="videos/10 Best Hotels in Trinidad and Tobago (480 X 854).mp4" class="cta-button" onclick="showVideo(event)">Learn More</a>
+                    <a href="videos/10 Best Hotels in Trinidad and Tobago (480 X 854).mp4" class="cta-button"onclick="showVideo(event)" data-return-url="index.html">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -130,13 +130,24 @@
       </div>
     </div>
   </section>
-  <div id="video-container" style="display: none;">
-    <video id="video-player" controls>
-      <source src="" type="video/mp4">
-    </video>
+  <!-- Video Player -->
+<div id="video-player" class="modal fade" tabindex="-1" aria-labelledby="video-player-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="video-player-label">Video Player</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <video id="video" controls></video>
+      </div>
+      <div class="modal-footer">
+        <button id="return-button" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Return</button>
+      </div>
+    </div>
   </div>
-  <br><br>
-  
+</div>
+  <br><br>  
   <footer>
     <div class="footer-content">
       <div class="row align-items-center">
@@ -183,37 +194,39 @@
         </div>
       </div>
     </div>
-  </footer>
-  
+  </footer>  
   <!-- Add necessary JavaScript files and scripts here -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> 
-   <script>
-  var destinationCarousel = new bootstrap.Carousel(document.getElementById('destination-carousel'));
-
-  function showVideo(event) {
-    event.preventDefault();
-    var videoContainer = document.getElementById('video-container');
-    var videoPlayer = document.getElementById('video-player');
-    var carouselImage = document.querySelector('.carousel-item.active .carousel-image');
-
-    carouselImage.style.display = 'none';
-    videoContainer.style.display = 'block';
-    videoPlayer.src = event.target.href;
-    videoPlayer.play();
-    destinationCarousel.pause();
-  }
-
-  var videoPlayer = document.getElementById('video-player');
-  videoPlayer.addEventListener('ended', function() {
-    var videoContainer = document.getElementById('video-container');
-    var carouselImage = document.querySelector('.carousel-item.active .carousel-image');
-
-    videoContainer.style.display = 'none';
-    carouselImage.style.display = 'block';
-    videoPlayer.src = '';
-    destinationCarousel.cycle();
-  });
-</script>
+  <script>
+    function showVideo(event) {
+      event.preventDefault(); // Prevent the default link behavior
+  
+      const videoUrl = event.target.href; // Get the video URL from the link
+      const videoPlayer = new bootstrap.Modal(document.getElementById('video-player')); // Get the video player modal
+  
+      // Set the video source and play
+      const video = document.getElementById('video');
+      video.src = videoUrl;
+      video.play();
+  
+      // Listen for video end event
+      video.onended = function() {
+        videoPlayer.hide(); // Hide the video player modal when the video ends
+        window.location.href = event.target.getAttribute('data-return-url'); // Return to the page
+      };
+  
+      // Listen for return button click event
+      const returnButton = document.getElementById('return-button');
+      returnButton.onclick = function() {
+        video.pause(); // Pause the video
+        video.currentTime = 0; // Reset the video playback position to the beginning
+        window.location.href = event.target.getAttribute('data-return-url'); // Return to the page
+      };
+  
+      // Show the video player modal
+      videoPlayer.show();
+    }
+  </script>
 </body>
 </html>
